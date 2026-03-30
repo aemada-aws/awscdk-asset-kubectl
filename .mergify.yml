@@ -31,6 +31,7 @@ pull_request_rules:
           - auto-approve
   - name: Automatic merge on approval and successful build
     actions:
+      delete_head_branch: {}
       queue:
         name: default
     conditions:
